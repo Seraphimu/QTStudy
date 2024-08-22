@@ -51,6 +51,12 @@ void Widget::on_cancelButton_clicked() {
 }
 
 
-
+/*
+ * QProcess类的对象可以根据字符串运行windows的程序
+ * //分配空间
+ * QProcess * myProcess = new Process(this);
+ * myProcess->start(programName);
+ *
+ * /
 
 
