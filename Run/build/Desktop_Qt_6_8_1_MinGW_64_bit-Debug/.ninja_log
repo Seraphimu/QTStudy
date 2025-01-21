@@ -1,0 +1,21 @@
+# ninja log v6
+14	1012	7590412508573689	Run_autogen/timestamp	6bd3626b4c391673
+14	1012	7590412508573689	Run_autogen/mocs_compilation.cpp	6bd3626b4c391673
+14	1012	7590412508573689	C:/Users/ATRI/MySpace/Projects/QTStudy/Run/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Run_autogen/timestamp	6bd3626b4c391673
+14	1012	7590412508573689	C:/Users/ATRI/MySpace/Projects/QTStudy/Run/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Run_autogen/mocs_compilation.cpp	6bd3626b4c391673
+1023	4334	7590412509635792	CMakeFiles/Run.dir/Run_autogen/mocs_compilation.cpp.obj	8315efe3e0bd2191
+1025	4388	7590412509655708	CMakeFiles/Run.dir/main.cpp.obj	a9e408729001eb90
+50	235	7590416658849928	Run_autogen/timestamp	6bd3626b4c391673
+50	235	7590416658849928	Run_autogen/mocs_compilation.cpp	6bd3626b4c391673
+50	235	7590416658849928	C:/Users/ATRI/MySpace/Projects/QTStudy/Run/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Run_autogen/timestamp	6bd3626b4c391673
+50	235	7590416658849928	C:/Users/ATRI/MySpace/Projects/QTStudy/Run/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Run_autogen/mocs_compilation.cpp	6bd3626b4c391673
+237	3667	7590416660725310	CMakeFiles/Run.dir/widget.cpp.obj	206a4ce12be57176
+3667	4098	7590416695025049	Run.exe	7d0b1b2f94ef3c99
+32	245	7590423586571789	Run_autogen/timestamp	6bd3626b4c391673
+32	245	7590423586571789	Run_autogen/mocs_compilation.cpp	6bd3626b4c391673
+32	245	7590423586571789	C:/Users/ATRI/MySpace/Projects/QTStudy/Run/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Run_autogen/timestamp	6bd3626b4c391673
+32	245	7590423586571789	C:/Users/ATRI/MySpace/Projects/QTStudy/Run/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Run_autogen/mocs_compilation.cpp	6bd3626b4c391673
+247	4688	7590423588713305	CMakeFiles/Run.dir/widget.cpp.obj	206a4ce12be57176
+4688	5349	7590423633122427	Run.exe	7d0b1b2f94ef3c99
+14	77	7590428661909002	CMakeFiles/clean.additional	baedbe210acaa455
+77	90	7590428662538009	clean	577b940aee94fbd7

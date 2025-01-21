@@ -16,11 +16,15 @@ Widget::Widget(QWidget *parent)
     ui->mainLineEdit->setFont(f);
 
     //放图标，路径注意转义字符
-    // QIcon con("../img/icons/BackSpaceIcon.png");
+    //补---------这个写法是调用构造函数-------------------
+    //和QIcon * con = new QIcon("");差不多罢，就是con的意义就从一个一个一个QIcon对象变成了一个一个一个指向QIcon对象的指针力
+    //用指针分配内存在堆区，用变量则分配在栈区
+    //QIcon con("img/icons/BackSpaceIcon.png");
 
-    QIcon con("C:/Users/ATRI/Files/Projects/QTStudy/Calculator/img/icons/BackSpaceIcon.png");
-    ui->deleteButton->setIcon(con);
-
+    // QIcon con("C:/Users/ATRI/MySpace/Projects/QTStudy/Calculator/img/icons/BackSpaceIcon.png");
+    QIcon * con = new QIcon("C:/Users/ATRI/MySpace/Projects/QTStudy/Calculator/img/icons/BackSpaceIcon.png");
+    ui->deleteButton->setIcon(*con);
+    // ui->deleteButton->setIcon(con);
 
     //改变按钮背景
     ui->equalButton->setStyleSheet("background:green");
@@ -140,7 +144,7 @@ void Widget::on_rightButton_clicked()
 
 void Widget::on_clearButton_clicked()
 {
-    //清空字符串
+    //清空字符串，clear方法
     expression.clear();
     //清空界面显示
     ui->mainLineEdit->clear();

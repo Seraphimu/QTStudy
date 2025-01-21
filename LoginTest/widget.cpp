@@ -36,7 +36,7 @@ void Widget::on_loginButton_clicked()
 方法一：右键，转到槽
 方法二：用connect()方法 + 宏实现
 方法三：用connect()方法 + 方法指针实现
-方法四：用connect()方法 + 对象指针
+方法四：用connect()方法 + [this]
 QMessageBox类中的当information()方法：
 void QMessageBox::information(pointerToObject, QString leftSup, QString indicationInfo);
 QString为QT自己定义的一种字符串类型

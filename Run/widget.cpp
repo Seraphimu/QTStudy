@@ -19,6 +19,9 @@ Widget::Widget(QWidget *parent)
 
     connect(ui->cancelButton, &QPushButton::clicked, this, &Widget::on_cancelButton_clicked);
 
+
+    //---------------------------------------------
+    //这TM是什么鬼写法
     connect(ui->browseButton, &QPushButton::clicked, [this]() {
         QMessageBox::information(this, "信息", "点击浏览");
     });
@@ -51,12 +54,33 @@ void Widget::on_cancelButton_clicked() {
 }
 
 
-/*
- * QProcess类的对象可以根据字符串运行windows的程序
- * //分配空间
- * QProcess * myProcess = new Process(this);
- * myProcess->start(programName);
- *
- * /
+
+//  QProcess类的对象可以根据字符串运行windows的程序
+// //分配空间，调用构造函数
+//  QProcess * myProcess = new Process(this);
+//  myProcess->start(programName);
+
+
+
+//槽函数使用的方法
+//1. 用鼠标右键转到
+//2. 用connect()函数手动绑定
+//3. 界面指针ui的意义和使用方法
+//4. 获取lineEdit的文本
+//5. Process类如何启动一个进程
+//6. close函数的使用
+//
+//7. 这TM是什么
+// connect(ui->browseButton, &QPushButton::clicked, [this]() {
+//     QMessageBox::information(this, "信息", "点击浏览");
+// });
+
+
+
+
+
+
+
+
 
 
