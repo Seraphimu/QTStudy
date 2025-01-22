@@ -1,0 +1,32 @@
+#ifndef WIDGET_H
+#define WIDGET_H
+
+#include <QWidget>
+#include <QProcess>
+#include <QMessageBox>
+
+QT_BEGIN_NAMESPACE
+namespace Ui {
+class Widget;
+}
+QT_END_NAMESPACE
+
+class Widget : public QWidget
+{
+    Q_OBJECT
+
+public:
+    Widget(QWidget *parent = nullptr);
+    ~Widget();
+
+private slots:
+    void on_commitButton_released();
+
+    void on_cancelButton_released();
+
+    void on_browseButton_released();
+
+private:
+    Ui::Widget *ui;
+};
+#endif // WIDGET_H
