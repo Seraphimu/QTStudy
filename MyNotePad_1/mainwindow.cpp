@@ -90,8 +90,35 @@ void MainWindow::saveActionSlot() {
     }
 }
 
+void MainWindow::keyPressEvent(QKeyEvent * ev) {
+    //按下Ctrl + S实现保存
+    //检测，如果按下的是Ctrl + S，则调用saveActionSlot()
+    //key()函数和modifiers()函数可以检测按下的是哪些键盘
+    if (ev->key() == Qt::Key_S && ev->modifiers() == Qt::ControlModifier) {
+        saveActionSlot();
+    }
+
+}
+
+void MainWindow::mousePressEvent(QMouseEvent * ev) {
+    //获取鼠标的坐标
+    QPoint pt = ev->pos();
+    qDebug() << pt << "\n";
+
+    if (ev->button() == Qt::LeftButton) {
+        qDebug() << "左键";
+    }
+    else if (ev->button() == Qt::RightButton) {
+        qDebug() << "右键";
+    }
+    else if (ev->button() == Qt::MiddleButton) {
+        qDebug() << "中键";
+    }
+}
+
 
 //总结：
 //1. 此次复习对文件数据的存储有了比之前更清晰的认知
 //打开文件内容是要把磁盘上的文件内容计入到内存中的一个变量来，再从这个变量放到Qt的控件上
 //写入文件是把Qt控件上的文件内容用一个变量保存起来，再用write()函数写入到文件中
+//重写的函数名不能错注意

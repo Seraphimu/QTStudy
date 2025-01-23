@@ -6,6 +6,8 @@
 #include <QString>
 #include <QDebug>
 #include <QFileDialog>
+#include <QMouseEvent>
+#include <QKeyEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -21,6 +23,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+
+
 private:
     Ui::MainWindow *ui;
 
@@ -31,5 +35,11 @@ private slots:
     void openActionSlot();
     //保存
     void saveActionSlot();
+
+    //重写
+    //重写的函数名不能错注意
+    virtual void keyPressEvent(QKeyEvent * ev);
+
+    virtual void mousePressEvent(QMouseEvent * ev);
 };
 #endif // MAINWINDOW_H
