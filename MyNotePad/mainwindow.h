@@ -6,6 +6,10 @@
 #include <QMessageBox>
 #include <QDebug>
 
+//键鼠事件
+#include <QKeyEvent>
+#include <QMouseEvent>
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -33,5 +37,10 @@ private slots:
 
     //保存操作
     void saveActionSlot();
+
+    //键盘事件虚函数
+    virtual void keyPressEvent(QKeyEvent * ev);
+    //鼠标事件虚函数
+    virtual void mousePressEvent(QMouseEvent * ev);
 };
 #endif // MAINWINDOW_H

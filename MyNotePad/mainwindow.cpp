@@ -99,6 +99,32 @@ void MainWindow::saveActionSlot() {
     }
 }
 
+void MainWindow::keyPressEvent(QKeyEvent * ev) {
+    //按下Ctrl + S实现保存
+    //检测，如果按下的是Ctrl + S，则调用saveActionSlot()
+    //key()函数和modifiers()函数可以检测按下的是哪些键盘
+    if (ev->key() == Qt::Key_S && ev->modifiers() == Qt::ControlModifier) {
+        saveActionSlot();
+    }
+}
+
+void MainWindow::mousePressEvent(QMouseEvent * ev) {
+    //获取鼠标的坐标
+    QPoint pt = ev->pos();
+    qDebug() << pt << "\n";
+
+    //button()函数可以获取按下的是什么按键
+    if (ev->button() == Qt::LeftButton) {
+        qDebug() << "按下的是左键。\n";
+    }
+    else if (ev->button() == Qt::RightButton) {
+        qDebug() << "按下的是右键。\n";
+    }
+    else if (ev->button() == Qt::MiddleButton){
+        qDebug() << "按下的是中键。\n";
+    }
+}
+
 
 
 
