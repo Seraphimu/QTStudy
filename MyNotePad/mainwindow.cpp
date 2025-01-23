@@ -106,6 +106,7 @@ void MainWindow::keyPressEvent(QKeyEvent * ev) {
     if (ev->key() == Qt::Key_S && ev->modifiers() == Qt::ControlModifier) {
         saveActionSlot();
     }
+
 }
 
 void MainWindow::mousePressEvent(QMouseEvent * ev) {
